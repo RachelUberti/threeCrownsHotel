@@ -1,12 +1,18 @@
 // the order of imports makes a difference. Mixins first. 
 
-@use 'scss/components/about';
-@use 'scss/components/navbar';
-@use 'scss/components/about';
-@use 'scss/components/block-text-left';
-@use 'scss/components/block-text-right';
-@use 'scss/components/block-image-left';
-@use 'scss/components/block-image-right';
-@use 'scss/components/footer';
+@import 'components/body';
+@import 'components/navbar';
+@import 'components/hero-image';
+@import 'components/about';
+@import 'components/block-image-left';
+@import 'components/block-image-right';
+@import 'components/block-text-left';
+@import 'components/block-text-right';
+@import 'components/footer';
+
+
+
+
+
 
 
