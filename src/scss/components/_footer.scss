@@ -1,14 +1,15 @@
 @use '../abstracts' as *;
 
-
 .footer {
     background-color: $black;
-    padding: 7% 15%; 
-    min-width: 1680px;
+    width: 1680px;
+    height: 408px;
+    
 
     &__heading {
         @include font-bold;
         color: #f4f2ef;
+        padding-top: 80px;
     }
 
     &__line {

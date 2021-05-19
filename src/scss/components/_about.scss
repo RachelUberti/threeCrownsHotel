@@ -2,25 +2,26 @@
 
 
 .about {
-    background-color: red;
-    padding: 7% 15%; 
-    min-width: 1680px;
+    width: 1680px;
+    height: 532px;
+    background: #ECE9E4;
 
     &__heading {
-        @include font-bold;
-        color: #f4f2ef;
+        @include font-bold;        
+        padding: 110px 655px 0px 655px;
+        margin: 0px;
     }
 
     &__line {
-        border-bottom: 1px solid #f4f2ef;
+        border-bottom: 1px solid $black;
         box-align: center;
         width: 80px;
-        margin-bottom: 40px;
+        margin: 0px 800px 0px 800px;
     }
 
     &__text {
         @include font-normal;
-        color: #f4f2ef;
+        padding: 0px 440px 110px 440px;
         margin: 0px;
     }
        

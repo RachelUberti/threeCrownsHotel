@@ -7,10 +7,8 @@ body, html {
 .navbar {
   overflow: hidden;
   position: absolute;
-  width: 1690px;
+  width: 1680px;
   height: 125px;
-  left: 0px;
-  top: 0px;
   background: #FFFFFF;
   opacity: 0.7;
 }
@@ -63,18 +61,15 @@ body, html {
 }
 
 .hero-image {
-  background-size: cover;
   position: relative;
   width: 1680px;
   height: 909px;
-  left: 0px;
-  top: 0px;
 }
 
 .about {
-  background-color: red;
-  padding: 7% 15%;
-  min-width: 1680px;
+  width: 1680px;
+  height: 532px;
+  background: #ECE9E4;
 }
 .about__heading {
   font-family: "Montserrat", "Roboto", "Sans Serif";
@@ -86,13 +81,14 @@ body, html {
   align-items: center;
   text-align: center;
   letter-spacing: 0.2em;
-  color: #f4f2ef;
+  padding: 110px 655px 0px 655px;
+  margin: 0px;
 }
 .about__line {
-  border-bottom: 1px solid #f4f2ef;
+  border-bottom: 1px solid #000000;
   box-align: center;
   width: 80px;
-  margin-bottom: 40px;
+  margin: 0px 800px 0px 800px;
 }
 .about__text {
   font-family: "Montserrat", "Roboto", "Sans Serif";
@@ -104,14 +100,14 @@ body, html {
   align-items: center;
   text-align: center;
   letter-spacing: 0.05em;
-  color: #f4f2ef;
+  padding: 0px 440px 110px 440px;
   margin: 0px;
 }
 
 .footer {
   background-color: #000000;
-  padding: 7% 15%;
-  min-width: 1680px;
+  width: 1680px;
+  height: 408px;
 }
 .footer__heading {
   font-family: "Montserrat", "Roboto", "Sans Serif";
@@ -124,6 +120,7 @@ body, html {
   text-align: center;
   letter-spacing: 0.2em;
   color: #f4f2ef;
+  padding-top: 80px;
 }
 .footer__line {
   border-bottom: 1px solid #f4f2ef;
