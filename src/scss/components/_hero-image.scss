@@ -1,0 +1,10 @@
+@use '../abstracts' as *;
+
+.hero-image {
+    background-size: cover;
+    position: relative;
+    width: 1680px;
+    height: 909px;
+    left: 0px;
+    top: 0px;
+}

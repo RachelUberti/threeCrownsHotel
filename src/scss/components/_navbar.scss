@@ -1,0 +1,67 @@
+@use '../abstracts' as *;
+
+.navbar {
+    overflow: hidden;
+    position: absolute;
+    width: 1690px;
+    height: 125px;
+    left: 0px;
+    top: 0px;
+    background: #FFFFFF;
+    opacity: 0.7;
+
+    &__button-menu {
+      @include font-bold;
+      position: absolute;
+      width: 260px;
+      height: 49px;
+      left: 60px;
+      top: 41px;
+      border: none;
+      text-align: center;
+      background: #FFFFFF;
+    }
+
+    &__logo {
+      position: absolute;
+      display: inline-block;
+      vertical-align: text-top;
+      width: 162px;
+      height: 104px;
+      left: 759px;
+      top: 14px;
+    }
+
+    &__button-book {
+      @include font-bold;
+      position: absolute;
+      width: 260px;
+      height: 65px;
+      left: 1356px;
+      top: 33px;
+      border: 3px solid $black ;
+      text-align: center;
+      background: #FFFFFF;
+    }
+  }
+
+  // class="d-inline-block align-text-top"
+
+  // .navbar a {
+  //   float: left;
+  //   color: #f2f2f2;
+  //   text-align: center;
+  //   padding: 14px 16px;
+  //   text-decoration: none;
+  //   font-size: 17px;
+  // }
+
+  // .navbar a:hover {
+  //   background-color: #df7a37b0;
+  //   color: black;
+  // }
+  
+  // .navbar a.active {
+  //   background-color: #df7a37b0;
+  //   color: white;
+  // }

@@ -1,0 +1,27 @@
+@use '../abstracts' as *;
+
+
+.about {
+    background-color: red;
+    padding: 7% 15%; 
+    min-width: 1680px;
+
+    &__heading {
+        @include font-bold;
+        color: #f4f2ef;
+    }
+
+    &__line {
+        border-bottom: 1px solid #f4f2ef;
+        box-align: center;
+        width: 80px;
+        margin-bottom: 40px;
+    }
+
+    &__text {
+        @include font-normal;
+        color: #f4f2ef;
+        margin: 0px;
+    }
+       
+}   

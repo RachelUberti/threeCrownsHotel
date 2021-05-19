@@ -1,13 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="format-detection" content="telephone=no"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="scss/main.scss">  
+    <title>Three Crowns Hotel</title>
+    <link rel="stylesheet" href="scss/main.scss"> 
+    
+        <!-- bootstrap -->
+        <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+        crossorigin="anonymous"
+        />
+        <!-- Google fonts -->
+        <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+        rel="stylesheet"
+      />
+      
+      <!-- Font awesome -->
+      <script src="https://use.fontawesome.com/8eb409c3d6.js"></script>
+      <script
+        src="https://kit.fontawesome.com/94a21f29c7.js"
+        crossorigin="anonymous"
+      ></script>
+
 </head>
 <body>
-    Hello world!
+
+    <!-- Nav bar  -->
+    <nav class="navbar navbar-default fixed-top">
+        <div class="container-fluid">
+          <button class="navbar__button-menu">MENU</button>
+          <a class="navbar__logo" href="#">
+            <img src="images/logo.svg" alt="Three Crowns Hotel Logo">
+          </a>
+          <button class="navbar__button-book">BOOK A TABLE</button>
+        </div>
+       </nav>
+  
+      <!-- Hero image -->
+      <section>
+        <div class="container-fluid">
+          <div class="row hero-image">
+          <img src="images/hero-image.jpg">
+        </div>
+        </div>
+      </section>
+  
+      <!-- About section -->
+      <section>
+        <div class="container-fluid">
+          <div class="row about">
+            <h1 class="about__heading">GREAT FOOD, BOOZE & PEOPLE</h1>
+            <hr class="about__line">
+            <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos amet dolor rem, dolores inventore voluptates illum molestiae vero. Sed quas ea sunt reprehenderit quia in repudiandae architecto a itaque nam.</p>
+        </div>
+        </div>
+      </section>
+  
+       <!-- Two Columns Section -->
+      <section>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-6 column">Column</div>
+            <div class="col-lg-6 column">Column</div>
+          </div>
+          <img src="images/spritz.jpg">
+        </div>
+      </section>
+  
+      <footer>
+        <div class="container-xxl">
+          <div class="footer">
+          <h1 class="footer__heading">COME DINE WITH US</h1>
+          <hr class="footer__line">
+          <p class="footer__hours">Tues: 4pm to late</p>
+          <p class="footer__hours">Wed to Sun: 12pm to late</p>
+          <div class="footer__phone">  
+          <span itemprop="telephone"> 
+          <a class="footer__phone-link" href="tel:03-93265033">03 9326 5033</a>
+          </span>
+          </div>
+        </div>
+        </div>
+      </footer>
+  
 </body>
 </html>
