@@ -4,25 +4,23 @@
 .about {
     width: 1680px;
     height: 532px;
-    background: #ECE9E4;
+    background: $beige;
 
     &__heading {
-        @include font-bold;        
-        padding: 110px 655px 0px 655px;
-        margin: 0px;
+        @include font-bold; 
+        padding-top: 110px;
+        padding-bottom: 16px;
     }
 
     &__line {
         border-bottom: 1px solid $black;
-        box-align: center;
         width: 80px;
-        margin: 0px 800px 0px 800px;
     }
 
     &__text {
         @include font-normal;
-        padding: 0px 440px 110px 440px;
-        margin: 0px;
+        padding-top: 16px;
+        margin: 0px 440px 0px 440px;
     }
        
 }   

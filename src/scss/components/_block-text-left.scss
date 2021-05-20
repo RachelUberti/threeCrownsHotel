@@ -1,1 +1,29 @@
 @use '../abstracts' as *;
+
+.block {
+    background-color: $white;
+    position: relative;
+    
+    &__text {
+        margin: 0;
+        position: absolute;               
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        transform: translate(-50%, -50%) 
+    }
+
+    &__heading {
+        @include font-bold;  
+    
+    }
+
+    &__line {
+        border-bottom: 1px solid $black;
+        width: 80px;
+    }
+
+    &__para {
+        @include font-normal;
+    }
+}
