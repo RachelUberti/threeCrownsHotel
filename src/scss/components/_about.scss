@@ -1,15 +1,26 @@
 @use '../abstracts' as *;
 
-
 .about {
+    background-color: $beige;
     width: 1680px;
-    height: 532px;
-    background: $beige;
+    height: 408px;
+    position: relative;
+
+
+    &__text {
+    position: absolute;               
+    max-width: 50%;
+    padding: 1em;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    }
 
     &__heading {
         @include font-bold; 
-        padding-top: 110px;
-        padding-bottom: 16px;
+        // padding-top: 110px;
+        // padding-bottom: 16px;
     }
 
     &__line {
@@ -17,10 +28,10 @@
         width: 80px;
     }
 
-    &__text {
+    &__para {
         @include font-normal;
-        padding-top: 16px;
-        margin: 0px 440px 0px 440px;
+        // padding-top: 16px;
+        // margin: 0px 440px 0px 440px;
     }
        
 }   

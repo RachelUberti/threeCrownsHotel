@@ -6,10 +6,8 @@ body, html {
 
 .navbar {
   overflow: hidden;
-  position: absolute;
-  width: 1680px;
   height: 125px;
-  background: #FFFFFF;
+  background: #ffffff;
   opacity: 0.7;
 }
 .navbar__button-menu {
@@ -22,23 +20,17 @@ body, html {
   align-items: center;
   text-align: center;
   letter-spacing: 0.2em;
-  position: absolute;
   width: 260px;
   height: 49px;
-  left: 60px;
-  top: 41px;
   border: none;
-  text-align: center;
   background: #FFFFFF;
 }
 .navbar__logo {
   position: absolute;
-  display: inline-block;
-  vertical-align: text-top;
   width: 162px;
-  height: 104px;
-  left: 759px;
-  top: 14px;
+  left: 50%;
+  margin-left: -50px !important;
+  display: block;
 }
 .navbar__button-book {
   font-family: "Montserrat", "Roboto", "Sans Serif";
@@ -50,26 +42,32 @@ body, html {
   align-items: center;
   text-align: center;
   letter-spacing: 0.2em;
-  position: absolute;
   width: 260px;
   height: 65px;
-  left: 1356px;
-  top: 33px;
   border: 3px solid #000000;
-  text-align: center;
   background: #FFFFFF;
 }
 
 .hero-image {
   position: relative;
-  width: 1680px;
-  height: 909px;
+  max-width: 100%;
+  height: auto;
 }
 
 .about {
+  background-color: #ECE9E4;
   width: 1680px;
-  height: 532px;
-  background: #ECE9E4;
+  height: 408px;
+  position: relative;
+}
+.about__text {
+  position: absolute;
+  max-width: 50%;
+  padding: 1em;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
 }
 .about__heading {
   font-family: "Montserrat", "Roboto", "Sans Serif";
@@ -81,14 +79,12 @@ body, html {
   align-items: center;
   text-align: center;
   letter-spacing: 0.2em;
-  padding-top: 110px;
-  padding-bottom: 16px;
 }
 .about__line {
   border-bottom: 1px solid #000000;
   width: 80px;
 }
-.about__text {
+.about__para {
   font-family: "Montserrat", "Roboto", "Sans Serif";
   font-weight: normal;
   font-style: normal;
@@ -98,8 +94,6 @@ body, html {
   align-items: center;
   text-align: center;
   letter-spacing: 0.05em;
-  padding-top: 16px;
-  margin: 0px 440px 0px 440px;
 }
 
 .block-image-right {
@@ -109,7 +103,7 @@ body, html {
 }
 
 .block {
-  background-color: #ffffff;
+  background: #ffffff;
   position: relative;
 }
 .block__text {

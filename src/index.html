@@ -30,8 +30,39 @@
 </head>
 <body>
 
+
+
     <!-- Nav bar  -->
-    <nav class="navbar navbar-default fixed-top">
+  <section> 
+    <div> 
+      <nav class="navbar navbar-expand-md fixed-top">
+        <a class="navbar__logo" href="#"><img src="images/logo.svg" alt="Three Crowns Hotel Logo">
+        </a>
+        <button
+          class="navbar-toggler navbar-light"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarToggler"
+          aria-controls="navbarToggler"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Nav bar link options-->
+        <div class="collapse navbar-collapse" id="navbarToggler">
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#menu"><button class="navbar__button-menu">MENU</button></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#book"><button class="navbar__button-book">BOOK A TABLE</button></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <!-- <nav class="navbar fixed-top">
         <div class="container-fluid">
           <button class="navbar__button-menu">MENU</button>
           <a class="navbar__logo" href="#">
@@ -39,30 +70,29 @@
           </a>
           <button class="navbar__button-book">BOOK A TABLE</button>
         </div>
-       </nav>
-  
-      <!-- Hero image -->
-      <section>
-        <div class="container-fluid px-0">
-          <div class="row mx-0 hero-image">
-          <img class="img-fluid w-100" src="images/hero-image.jpg">
+       </nav> -->
+    <!-- Hero image -->
+        <div>
+          <img class="hero-image" src="images/hero-image.jpg" alt="People eating and drinking at a table">
         </div>
-        </div>
-      </section>
-  
+    </div>
+  </section>
+
       <!-- About section -->
-      <section>
+    <section>
         <div class="container-fluid px-0">
           <div class="row mx-0">
             <div class="about"> 
-              <h1 class="about__heading">GREAT FOOD, BOOZE & PEOPLE</h1>
-              <hr class="about__line">
-              <p class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos amet dolor rem, dolores inventore voluptates illum molestiae vero. Sed quas ea sunt reprehenderit quia in repudiandae architecto a itaque nam.</p>
-            </div>    
+              <div class="about__text"> 
+                <h1 class="about__heading">GREAT FOOD, BOOZE & PEOPLE</h1>
+                <hr class="about__line">
+                <p class="about__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos amet dolor rem, dolores inventore voluptates illum molestiae vero. Sed quas ea sunt reprehenderit quia in repudiandae architecto a itaque nam.</p>
+              </div>   
+            </div>
           </div>
         </div>
-      </section>
-  
+    </section>
+
        <!-- Two Columns Section -->
     <section>
       <div class="container-fluid px-0">

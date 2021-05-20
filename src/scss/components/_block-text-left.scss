@@ -1,7 +1,7 @@
 @use '../abstracts' as *;
 
 .block {
-    background-color: $white;
+    background: $white;
     position: relative;
     
     &__text {
@@ -10,7 +10,7 @@
         top: 50%;
         left: 50%;
         margin-right: -50%;
-        transform: translate(-50%, -50%) 
+        transform: translate(-50%, -50%); 
     }
 
     &__heading {
