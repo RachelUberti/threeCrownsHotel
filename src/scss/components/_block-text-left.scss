@@ -3,7 +3,7 @@
 .block {
     background: $white;
     position: relative;
-    
+
     &__text {
         margin: 0;
         position: absolute;               
@@ -15,7 +15,6 @@
 
     &__heading {
         @include font-bold;  
-    
     }
 
     &__line {

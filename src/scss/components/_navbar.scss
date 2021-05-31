@@ -1,10 +1,14 @@
 @use '../abstracts' as *;
 
 .navbar {
+    // display: flex;
     overflow: hidden;
     height: 125px;
+    width: 1690px;
     background: $white;
     opacity: 0.7;
+    // align-items: center;
+    // justify-content: center;
 
     &__button-menu {
       @include font-bold;
@@ -16,9 +20,8 @@
 
     &__logo {
       position: absolute;
-      width: 162px;
       left: 50%;
-      margin-left: -50px !important; 
+      // margin-left: -50px !important; 
       display: block;  
     }
 
@@ -28,5 +31,7 @@
       height: 65px;
       border: 3px solid $black ;
       background: #FFFFFF;
+      position: relative;
+      
     }
   }
