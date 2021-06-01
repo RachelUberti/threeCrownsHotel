@@ -4,48 +4,44 @@ body, html {
   height: 100%;
 }
 
-.navbar {
-  overflow: hidden;
+.header2 {
+  position: fixed;
+  top: 0;
   height: 125px;
-  width: 1690px;
-  background: #ffffff;
-  opacity: 0.7;
-}
-.navbar__button-menu {
-  font-family: "Montserrat", "Roboto", "Sans Serif";
-  font-weight: bold;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 20px;
-  color: #000000;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 8px 16px;
+  display: flex;
   align-items: center;
-  text-align: center;
-  letter-spacing: 0.2em;
-  width: 260px;
-  height: 49px;
-  border: none;
-  background: #FFFFFF;
 }
-.navbar__logo {
+
+@media only screen and (min-width: 768px) {
+  .navbar-toggler {
+    display: none;
+  }
+}
+
+.header2__nav {
+  width: 100%;
+}
+.header2__nav ul {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.header2__nav li {
+  display: inline-block;
+}
+
+.logo {
   position: absolute;
+  top: 50%;
   left: 50%;
-  display: block;
-}
-.navbar__button-book {
-  font-family: "Montserrat", "Roboto", "Sans Serif";
-  font-weight: bold;
-  font-style: normal;
-  font-size: 16px;
-  line-height: 20px;
-  color: #000000;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.2em;
-  width: 260px;
-  height: 65px;
-  border: 3px solid #000000;
-  background: #FFFFFF;
-  position: relative;
+  transform: translate(-50%, -50%);
 }
 
 .hero-image {
@@ -98,19 +94,28 @@ body, html {
 
 .block-image-right {
   position: relative;
+  width: 100%;
 }
 
 .block {
   background: #ffffff;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .block__text {
   margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+@media screen and (min-width: 992px) {
+  .block__text {
+    min-height: none;
+  }
 }
 .block__heading {
   font-family: "Montserrat", "Roboto", "Sans Serif";
