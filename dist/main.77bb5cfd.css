@@ -4,17 +4,66 @@ body, html {
   height: 100%;
 }
 
-.header2 {
+.navbar {
   position: fixed;
   top: 0;
   height: 125px;
   left: 0;
   z-index: 10;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.7);
   padding: 8px 16px;
   display: flex;
   align-items: center;
+}
+.navbar__logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.navbar__nav {
+  width: 100%;
+}
+.navbar__nav ul {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar__nav li {
+  display: inline-block;
+}
+.navbar__button-menu {
+  font-family: "Montserrat", "Roboto", "Sans Serif";
+  font-weight: bold;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.2em;
+  width: 260px;
+  height: 49px;
+  border: none;
+  background: #FFFFFF;
+}
+.navbar__button-book {
+  font-family: "Montserrat", "Roboto", "Sans Serif";
+  font-weight: bold;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.2em;
+  width: 260px;
+  height: 65px;
+  border: 3px solid #000000;
+  background: #FFFFFF;
+  position: relative;
 }
 
 @media only screen and (min-width: 768px) {
@@ -23,47 +72,28 @@ body, html {
   }
 }
 
-.header2__nav {
-  width: 100%;
-}
-.header2__nav ul {
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-.header2__nav li {
-  display: inline-block;
-}
-
-.logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
 .hero-image {
-  position: relative;
   max-width: 100%;
   height: auto;
 }
 
 .about {
   background-color: #ECE9E4;
-  width: 1680px;
-  height: 408px;
-  position: relative;
+  max-width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .about__text {
-  position: absolute;
   max-width: 50%;
-  padding: 1em;
-  top: 50%;
-  left: 50%;
-  margin-right: -50%;
-  transform: translate(-50%, -50%);
+  padding: 3em;
+}
+@media screen and (max-width: 320px) {
+  .about__text {
+    max-width: 90%;
+    padding: 1em;
+  }
 }
 .about__heading {
   font-family: "Montserrat", "Roboto", "Sans Serif";

@@ -1,16 +1,61 @@
 @use '../abstracts' as *;
 
-.header2 {
+.navbar {
   position: fixed;
   top: 0;
   height: 125px;
   left: 0;
   z-index: 10;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.7);
+  // background-color: rgba(255, 255, 255, 0.7);
+  // background: $white;
+  // opacity: 0.7;
   padding: 8px 16px;
   display: flex;
   align-items: center;
+  //     overflow: hidden;
+
+
+  &__logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__nav {
+    width: 100%;
+  
+    ul {
+      display: flex;
+      width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    li {
+      display: inline-block;
+    }
+  }
+
+  &__button-menu {
+      @include font-bold;
+      width: 260px;
+      height: 49px;
+      border: none;
+      background: #FFFFFF;
+   }
+
+  &__button-book {
+      @include font-bold;
+      width: 260px;
+      height: 65px;
+      border: 3px solid $black ;
+      background: #FFFFFF;
+      position: relative;
+      
+   }
 }
 
 .navbar-toggler {
@@ -18,62 +63,3 @@
     display: none;
   }
 }
-
-.header2__nav {
-  width: 100%;
-
-  ul {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  li {
-    display: inline-block;
-  }
-}
-
-.logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-// .navbar {
-//     // display: flex;
-//     overflow: hidden;
-//     height: 125px;
-//     width: 1690px;
-//     background: $white;
-//     opacity: 0.7;
-//     // align-items: center;
-//     // justify-content: center;
-
-//     &__button-menu {
-//       @include font-bold;
-//       width: 260px;
-//       height: 49px;
-//       border: none;
-//       background: #FFFFFF;
-//     }
-
-//     &__logo {
-//       position: absolute;
-//       left: 50%;
-//       // margin-left: -50px !important; 
-//       display: block;  
-//     }
-
-//     &__button-book {
-//       @include font-bold;
-//       width: 260px;
-//       height: 65px;
-//       border: 3px solid $black ;
-//       background: #FFFFFF;
-//       position: relative;
-      
-//     }
-//   }
