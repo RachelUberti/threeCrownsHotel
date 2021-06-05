@@ -10,7 +10,11 @@
 
     &__text {
         padding: 4em;
-
+        
+        @media screen and (max-width: 320px) {
+            padding: 2em;
+            margin-top: 30px;
+        }
     }
 
     &__heading {
@@ -22,16 +26,27 @@
         border-bottom: 1px solid #f4f2ef;
         box-align: center;
         width: 80px;
+        margin-top: 35px;
+        margin-bottom: 40px;
+
     }
 
     &__hours {
         @include font-normal;
         color: #f4f2ef;
+
+        @media screen and (max-width: 320px) {
+            font-size: 18px;
+        }
     }
 
     &__phone {
         @include font-normal;
         margin-top: 35px;
+
+        @media screen and (max-width: 320px) {
+            font-size: 18px;
+        }
     }
         a:link, a:visited {
             text-decoration: none;

@@ -32,4 +32,15 @@
     &__para {
         @include font-normal;
     }
+
+    &__phone {
+        @include font-normal;
+    }
+        a:link, a:visited {
+            text-decoration: none;
+            color: $black;
+        } 
+        a:hover, a:active { 
+            text-decoration: underline; 
+        }
 }

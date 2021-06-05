@@ -11,6 +11,7 @@ body, html {
   left: 0;
   z-index: 10;
   width: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
   padding: 8px 16px;
   display: flex;
   align-items: center;
@@ -123,8 +124,8 @@ body, html {
 }
 
 .block-image-right {
-  position: relative;
   width: 100%;
+  height: auto;
 }
 
 .block {
@@ -173,6 +174,24 @@ body, html {
   text-align: center;
   letter-spacing: 0.05em;
 }
+.block__phone {
+  font-family: "Montserrat", "Roboto", "Sans Serif";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 34px;
+  color: #000000;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+.block a:link, .block a:visited {
+  text-decoration: none;
+  color: #000000;
+}
+.block a:hover, .block a:active {
+  text-decoration: underline;
+}
 
 .footer {
   background-color: #000000;
@@ -184,6 +203,12 @@ body, html {
 }
 .footer__text {
   padding: 4em;
+}
+@media screen and (max-width: 320px) {
+  .footer__text {
+    padding: 2em;
+    margin-top: 30px;
+  }
 }
 .footer__heading {
   font-family: "Montserrat", "Roboto", "Sans Serif";
@@ -201,6 +226,8 @@ body, html {
   border-bottom: 1px solid #f4f2ef;
   box-align: center;
   width: 80px;
+  margin-top: 35px;
+  margin-bottom: 40px;
 }
 .footer__hours {
   font-family: "Montserrat", "Roboto", "Sans Serif";
@@ -214,6 +241,11 @@ body, html {
   letter-spacing: 0.05em;
   color: #f4f2ef;
 }
+@media screen and (max-width: 320px) {
+  .footer__hours {
+    font-size: 18px;
+  }
+}
 .footer__phone {
   font-family: "Montserrat", "Roboto", "Sans Serif";
   font-weight: normal;
@@ -225,6 +257,11 @@ body, html {
   text-align: center;
   letter-spacing: 0.05em;
   margin-top: 35px;
+}
+@media screen and (max-width: 320px) {
+  .footer__phone {
+    font-size: 18px;
+  }
 }
 .footer a:link, .footer a:visited {
   text-decoration: none;
