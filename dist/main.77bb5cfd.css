@@ -271,5 +271,29 @@ body, html {
 .footer a:hover, .footer a:active {
   text-decoration: underline;
 }
+.footer__socials {
+  position: absolute;
+  right: 50px;
+  margin-top: 220px;
+}
+@media screen and (max-width: 320px) {
+  .footer__socials {
+    position: auto;
+    margin-top: 0px;
+    right: auto;
+  }
+}
+.footer__socials-button {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 60px;
+  vertical-align: middle;
+  border: solid 1px #ffffff;
+  border-radius: 50%;
+  padding: 12px;
+  margin: 10px;
+}
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */

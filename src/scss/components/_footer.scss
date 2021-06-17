@@ -55,5 +55,30 @@
         a:hover, a:active { 
             text-decoration: underline; 
         }
-       
+    
+    &__socials {
+        position: absolute;
+        right: 50px;
+        margin-top: 220px;
+
+        @media screen and (max-width: 320px) {
+            position: auto;
+            margin-top: 0px;
+            right: auto;
+        }
+    }
+
+    &__socials-button {
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            text-decoration: none;
+            line-height: 60px;
+            vertical-align: middle;
+            border: solid 1px $white;
+            border-radius: 50%;
+            padding: 12px;
+            margin: 10px;
     } 
+
+} 
