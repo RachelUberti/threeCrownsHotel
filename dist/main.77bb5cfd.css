@@ -175,7 +175,7 @@ body, html {
   text-align: center;
   letter-spacing: 0.05em;
 }
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 320px) {
   .block__para {
     max-width: 80%;
     word-wrap: break-word;

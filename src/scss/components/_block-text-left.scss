@@ -32,7 +32,7 @@
     &__para {
         @include font-normal;
 
-        @media screen and (min-width: 320px) {
+        @media screen and (max-width: 320px) {
             max-width: 80%;
             word-wrap: break-word;
 
