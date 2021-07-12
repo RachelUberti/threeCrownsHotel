@@ -1,4 +1,4 @@
-@use '../abstracts' as *;
+@use '../abstracts'as *;
 
 .block {
     background: $white;
@@ -21,7 +21,7 @@
     }
 
     &__heading {
-        @include font-bold;  
+        @include font-bold;
     }
 
     &__line {
@@ -32,21 +32,24 @@
     &__para {
         @include font-normal;
 
-        @media screen and (max-width: 320px) {
+        @media screen and (max-width: 400px) {
             max-width: 80%;
             word-wrap: break-word;
-
         }
     }
 
     &__phone {
         @include font-normal;
     }
-        a:link, a:visited {
-            text-decoration: none;
-            color: $black;
-        } 
-        a:hover, a:active { 
-            text-decoration: underline; 
-        }
+
+    a:link,
+    a:visited {
+        text-decoration: none;
+        color: $black;
+    }
+
+    a:hover,
+    a:active {
+        text-decoration: underline;
+    }
 }

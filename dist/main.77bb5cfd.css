@@ -7,15 +7,28 @@ body, html {
 .navbar {
   position: fixed;
   top: 0;
+  width: 100%;
   height: 125px;
   left: 0;
   z-index: 10;
-  width: 100%;
   background: #ffffff;
   opacity: 0.7;
   padding: 8px 16px;
-  display: flex;
   align-items: center;
+}
+.navbar ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  .navbar ul {
+    align-items: flex-start;
+  }
+}
+.navbar li {
+  display: block;
 }
 .navbar__logo {
   position: absolute;
@@ -23,18 +36,10 @@ body, html {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.navbar__nav {
-  width: 100%;
-}
-.navbar__nav ul {
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-.navbar__nav li {
-  display: inline-block;
+@media only screen and (max-width: 450px) {
+  .navbar__logo {
+    left: 68%;
+  }
 }
 .navbar__button-menu {
   font-family: "Montserrat", "Roboto", "Sans Serif";
@@ -46,10 +51,25 @@ body, html {
   align-items: center;
   text-align: center;
   letter-spacing: 0.2em;
-  width: 260px;
-  height: 49px;
-  border: none;
+  font-size: 10px;
   background: #FFFFFF;
+  border: 2px solid #000000;
+}
+@media only screen and (min-width: 768px) {
+  .navbar__button-menu {
+    font-family: "Montserrat", "Roboto", "Sans Serif";
+    font-weight: bold;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.2em;
+    width: 260px;
+    height: 65px;
+    border: none;
+  }
 }
 .navbar__button-book {
   font-family: "Montserrat", "Roboto", "Sans Serif";
@@ -61,17 +81,36 @@ body, html {
   align-items: center;
   text-align: center;
   letter-spacing: 0.2em;
-  width: 260px;
-  height: 65px;
-  border: 3px solid #000000;
+  font-size: 10px;
   background: #FFFFFF;
-  position: relative;
+  left: 0;
+  border: 2px solid #000000;
+}
+@media only screen and (min-width: 768px) {
+  .navbar__button-book {
+    font-family: "Montserrat", "Roboto", "Sans Serif";
+    font-weight: bold;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.2em;
+    width: 260px;
+    height: 65px;
+    border: 3px solid #000000;
+  }
 }
 
 @media only screen and (min-width: 768px) {
   .navbar-toggler {
     display: none;
   }
+}
+
+.nav-link {
+  padding: 1px;
 }
 
 .hero-image {
@@ -87,11 +126,11 @@ body, html {
   justify-content: center;
 }
 .about__text {
-  max-width: 50%;
+  max-width: 60%;
   padding: 3em;
   margin: 60px 0px;
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 560px) {
   .about__text {
     max-width: 90%;
     padding: 1em;
@@ -124,7 +163,7 @@ body, html {
   letter-spacing: 0.05em;
 }
 
-.block-image-right {
+.block-image {
   width: 100%;
   height: auto;
 }
@@ -175,7 +214,7 @@ body, html {
   text-align: center;
   letter-spacing: 0.05em;
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 400px) {
   .block__para {
     max-width: 80%;
     word-wrap: break-word;
@@ -192,12 +231,73 @@ body, html {
   text-align: center;
   letter-spacing: 0.05em;
 }
-.block a:link, .block a:visited {
+.block a:link,
+.block a:visited {
   text-decoration: none;
   color: #000000;
 }
-.block a:hover, .block a:active {
+.block a:hover,
+.block a:active {
   text-decoration: underline;
+}
+
+#menuNavbar {
+  position: relative;
+  opacity: 1;
+}
+
+.menu {
+  background: #ffffff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu__text {
+  margin: 0;
+  min-height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 80%;
+}
+@media screen and (min-width: 992px) {
+  .menu__text {
+    min-height: none;
+  }
+}
+.menu__para {
+  font-family: "Montserrat", "Roboto", "Sans Serif";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 22px;
+  line-height: 34px;
+  color: #000000;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+@media screen and (max-width: 320px) {
+  .menu__para {
+    word-wrap: break-word;
+  }
+}
+.menu__button {
+  font-family: "Montserrat", "Roboto", "Sans Serif";
+  font-weight: bold;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.2em;
+  width: 260px;
+  height: 65px;
+  border: 3px solid #000000;
+  background: #FFFFFF;
+  position: relative;
 }
 
 .footer {
@@ -230,6 +330,7 @@ body, html {
   text-align: center;
   letter-spacing: 0.2em;
   color: #f4f2ef;
+  padding-top: 20px;
 }
 .footer__line {
   border-bottom: 1px solid #f4f2ef;
@@ -272,24 +373,26 @@ body, html {
     font-size: 18px;
   }
 }
-.footer a:link, .footer a:visited {
+.footer a:link,
+.footer a:visited {
   text-decoration: none;
   color: #f4f2ef;
 }
-.footer a:hover, .footer a:active {
-  text-decoration: underline;
+.footer a:hover,
+.footer a:active {
+  text-decoration: none;
 }
 .footer__socials {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 130px;
+  padding-top: 40px;
 }
-@media screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .footer__socials {
     position: relative;
     left: 650px;
-    bottom: 80px;
+    bottom: 65px;
     padding: 0px;
   }
 }
@@ -303,7 +406,7 @@ body, html {
   border: solid 1px #ffffff;
   border-radius: 50%;
   padding: 12px;
-  margin: 30px;
+  margin: 20px;
 }
 
 /*# sourceMappingURL=/main.77bb5cfd.css.map */
