@@ -22,6 +22,7 @@
 
     &__heading {
         @include font-bold;
+        text-transform: uppercase;
     }
 
     &__line {

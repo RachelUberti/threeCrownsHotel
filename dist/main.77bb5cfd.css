@@ -1,7 +1,13 @@
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body, html {
   margin: 0px;
   padding: 0px;
   height: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
 }
 
 .navbar {
@@ -14,32 +20,16 @@ body, html {
   background: #ffffff;
   opacity: 0.7;
   padding: 8px 16px;
-  align-items: center;
 }
-.navbar ul {
-  display: flex;
+.navbar__list {
   width: 100%;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-}
-@media only screen and (max-width: 768px) {
-  .navbar ul {
-    align-items: flex-start;
-  }
+  padding: 0px;
 }
 .navbar li {
-  display: block;
-}
-.navbar__logo {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-@media only screen and (max-width: 450px) {
-  .navbar__logo {
-    left: 68%;
-  }
+  list-style-type: none;
 }
 .navbar__button-menu {
   font-family: "Montserrat", "Roboto", "Sans Serif";
@@ -51,24 +41,15 @@ body, html {
   align-items: center;
   text-align: center;
   letter-spacing: 0.2em;
-  font-size: 10px;
+  width: 260px;
+  height: 65px;
   background: #FFFFFF;
-  border: 2px solid #000000;
+  text-transform: uppercase;
+  border: none;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .navbar__button-menu {
-    font-family: "Montserrat", "Roboto", "Sans Serif";
-    font-weight: bold;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 20px;
-    color: #000000;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.2em;
-    width: 260px;
-    height: 65px;
-    border: none;
+    display: none;
   }
 }
 .navbar__button-book {
@@ -81,25 +62,14 @@ body, html {
   align-items: center;
   text-align: center;
   letter-spacing: 0.2em;
-  font-size: 10px;
-  background: #FFFFFF;
-  left: 0;
-  border: 2px solid #000000;
+  width: 260px;
+  height: 65px;
+  border: 3px solid #000000;
+  text-transform: uppercase;
 }
-@media only screen and (min-width: 768px) {
+@media only screen and (max-width: 768px) {
   .navbar__button-book {
-    font-family: "Montserrat", "Roboto", "Sans Serif";
-    font-weight: bold;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 20px;
-    color: #000000;
-    align-items: center;
-    text-align: center;
-    letter-spacing: 0.2em;
-    width: 260px;
-    height: 65px;
-    border: 3px solid #000000;
+    display: none;
   }
 }
 
@@ -107,10 +77,6 @@ body, html {
   .navbar-toggler {
     display: none;
   }
-}
-
-.nav-link {
-  padding: 1px;
 }
 
 .hero-image {
@@ -146,6 +112,7 @@ body, html {
   align-items: center;
   text-align: center;
   letter-spacing: 0.2em;
+  text-transform: uppercase;
 }
 .about__line {
   border-bottom: 1px solid #000000;
@@ -198,6 +165,7 @@ body, html {
   align-items: center;
   text-align: center;
   letter-spacing: 0.2em;
+  text-transform: uppercase;
 }
 .block__line {
   border-bottom: 1px solid #000000;
@@ -298,6 +266,7 @@ body, html {
   border: 3px solid #000000;
   background: #FFFFFF;
   position: relative;
+  text-transform: uppercase;
 }
 
 .footer {
@@ -331,6 +300,7 @@ body, html {
   letter-spacing: 0.2em;
   color: #f4f2ef;
   padding-top: 20px;
+  text-transform: uppercase;
 }
 .footer__line {
   border-bottom: 1px solid #f4f2ef;

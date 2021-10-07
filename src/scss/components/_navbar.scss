@@ -10,61 +10,41 @@
   background: $white;
   opacity: 0.7;
   padding: 8px 16px;
-  align-items: center;
 
-  ul {
-    display: flex;
+  &__list {
     width: 100%;
+    display: flex;
     justify-content: space-between;
     align-items: center;
-
-    @media only screen and (max-width: 768px) {
-      align-items: flex-start;
-    }
+    padding: 0px;
   }
 
   li {
-    display: block;
+    list-style-type: none;
   }
-
-  &__logo {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    @media only screen and (max-width: 450px) {
-      left: 68%;
-    }
-  }
-
 
   &__button-menu {
     @include font-bold;
-    font-size: 10px;
-    background: #FFFFFF;
-    border: 2px solid $black;
-
-    @media only screen and (min-width: 768px) {
-      @include font-bold;
       width: 260px;
       height: 65px;
+      background: #FFFFFF;
+      text-transform: uppercase;
       border: none;
-    }
+
+      @media only screen and (max-width: 768px) {
+        display: none;
+        }
   }
 
   &__button-book {
     @include font-bold;
-    font-size: 10px;
-    background: #FFFFFF;
-    left: 0;
-    border: 2px solid $black;
-
-    @media only screen and (min-width: 768px) {
-      @include font-bold;
-      width: 260px;
-      height: 65px;
-      border: 3px solid $black;
+    width: 260px;
+    height: 65px;
+    border: 3px solid $black;
+    text-transform: uppercase;
+      
+    @media only screen and (max-width: 768px) {
+    display: none;
     }
   }
 }
@@ -75,6 +55,3 @@
   }
 }
 
-.nav-link {
-  padding: 1px;
-}
