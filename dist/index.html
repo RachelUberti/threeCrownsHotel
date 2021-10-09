@@ -22,11 +22,12 @@
     <script src="https://kit.fontawesome.com/94a21f29c7.js" crossorigin="anonymous"></script>
   <script src="/main.77bb5cfd.js"></script></head>
   <body>
-  
+ 
     <header>
     <!-- Nav bar  -->
     <nav class="navbar">
-        <ul class="navbar__list">
+      <ul class="navbar__list">
+        <div class="burgerburger">&#9776;</div>
           <li>
             <a href="/menu.html"><button class="navbar__button-menu">Menus</button></a>
           </li>
@@ -39,7 +40,23 @@
             <a href="#book"><button class="navbar__button-book">Book a table</button>
             </a>
           </li>
-        </ul>
+        </ul>   
+
+        <!-- The overlay -->
+<div id="myNav" class="overlay">
+  <!-- Button to close the overlay navigation -->
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <!-- Overlay content -->
+  <div class="overlay-content">
+    <a href="#book"><button class="overlay__button-book">Book a table</button>
+  </a>
+  <a href="/menu.html"><button class="overlay__button-menu">Menus</button></a>
+            <div class="overlay__socials">
+              <a href="https://www.facebook.com/threecrownshotel" target="_blank" class="overlay__socials-button fa fa-facebook fa-2x"></a>
+              <a href="https://www.instagram.com/threecrownshotel/?hl=en" target="_blank" class="overlay__socials-button fa fa-instagram fa-2x"></a>
+            </div>
+  </div>
+</div>
     </nav>
 
       <!-- Hero image -->
@@ -169,6 +186,10 @@
       </div>
     </footer>
 
+    <!-- Jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <script src="/script.75da7f30.js"> </script>
     <!-- Bootstrap Jquery, Popper.js & JavaScript scripts -->
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
