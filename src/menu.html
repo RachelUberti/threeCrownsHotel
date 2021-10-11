@@ -1,92 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" name="format-detection" content="telephone=no" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Three Crowns Hotel</title>
 
-    <!-- bootstrap -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
+<head>
+  <meta charset="UTF-8" name="format-detection" content="telephone=no" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Three Crowns Hotel</title>
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="scss/main.scss" />
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 
-    <!-- Google fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+  <!-- CSS -->
+  <link rel="stylesheet" href="scss/main.scss" />
 
-    <!-- Font awesome -->
-    <script src="https://use.fontawesome.com/8eb409c3d6.js"></script>
-    <script
-      src="https://kit.fontawesome.com/94a21f29c7.js"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
+  <!-- Google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+
+  <!-- Font awesome -->
+  <script src="https://use.fontawesome.com/8eb409c3d6.js"></script>
+  <script src="https://kit.fontawesome.com/94a21f29c7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
 
   <!-- Nav bar  -->
   <header>
-     <!-- Nav bar  -->
-     <nav id="menuNavbar" class="navbar" >
+    <!-- Nav bar  -->
+    <nav id="menuNavbar" class="navbar">
       <ul class="navbar__list">
-        <div class="burgerburger" >&#9776;</div>
-          <li >
-            <a href="menu.html"
-              ><button class="navbar__button-menu">Home</button></a
-            >
-          </li>
-          <li >
-            <a class="navbar__logo" href="/">
-              <img src="images/logo.svg" alt="Three Crowns Hotel Logo"/>
-            </a>
-          </li>
-          <li>
-            <a href="#book"
-              ><button class="navbar__button-book">Book a table</button>
-            </a>
-          </li>
-        </ul>   
+        <div class="burgerburger">&#9776;</div>
+        <li>
+          <a href="menu.html"><button class="navbar__button-menu">Home</button></a>
+        </li>
+        <li>
+          <a class="navbar__logo" href="/">
+            <img src="images/logo.svg" alt="Three Crowns Hotel Logo" />
+          </a>
+        </li>
+        <li>
+          <a href="#book"><button class="navbar__button-book">Book a table</button>
+          </a>
+        </li>
+      </ul>
 
-        <!-- The overlay -->
-<div id="myNav" class="overlay">
-  <!-- Button to close the overlay navigation -->
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <!-- Overlay content -->
-  <div class="overlay-content">
-    <a href="#book"
-    ><button class="overlay__button-book">Book a table</button>
-  </a>
-  <a href="menu.html"
-              ><button class="overlay__button-menu">Home</button></a
-            >
-            <div class="overlay__socials">
-              <a
-                href="https://www.facebook.com/threecrownshotel"
-                target="_blank"
-                class="overlay__socials-button fa fa-facebook fa-2x"
-              ></a>
-              <a
-                href="https://www.instagram.com/threecrownshotel/?hl=en"
-                target="_blank"
-                class="overlay__socials-button fa fa-instagram fa-2x"
-              ></a>
-            </div>
-  </div>
-</div>
+      <!-- The overlay -->
+      <div id="myNav" class="overlay">
+        <!-- Button to close the overlay navigation -->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <!-- Overlay content -->
+        <div class="overlay-content">
+          <a href="#book"><button class="overlay__button-book">Book a table</button>
+          </a>
+          <a href="menu.html"><button class="overlay__button-menu">Home</button></a>
+          <div class="overlay__socials">
+            <a href="https://www.facebook.com/threecrownshotel" target="_blank"
+              class="overlay__socials-button fa fa-facebook fa-2x"></a>
+            <a href="https://www.instagram.com/threecrownshotel/?hl=en" target="_blank"
+              class="overlay__socials-button fa fa-instagram fa-2x"></a>
+          </div>
+        </div>
+      </div>
     </nav>
-</header>
+  </header>
 
   <!-- About section -->
   <section>
-    <div class="container-fluid px-0">
+    <div id="menuFirstSection" class="container-fluid px-0">
       <div class="row mx-0">
         <div class="about">
           <div class="about__text">
@@ -110,16 +90,9 @@
       <div class="row no-gutters flex-column-reverse flex-lg-row">
         <div class="col-lg-6">
           <picture>
-            <source
-              media="(max-width:400px)"
-              srcset="images/chicken-wings-cropped.png"
-            />
+            <source media="(max-width:400px)" srcset="images/chicken-wings-cropped.png" />
             <source srcset="images/chicken-wings.png" />
-            <img
-              class="block-image"
-              src="images/chicken-wings.png"
-              alt="Chicken wings in a basket"
-            />
+            <img class="block-image" src="images/chicken-wings.png" alt="Chicken wings in a basket" />
           </picture>
         </div>
         <div class="menu col-lg-6">
@@ -128,7 +101,9 @@
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. ntium
               velit aperiam repellat!
             </p>
-            <button class="menu__button" onclick="window.location.href='https:/drive.google.com/file/d/15f-QJsmNq4uZlGe4fe39t4LrntfrgPHT/view?usp=sharing'">View food menu</button>
+            <button class="menu__button"
+              onclick="window.location.href='https:/drive.google.com/file/d/15f-QJsmNq4uZlGe4fe39t4LrntfrgPHT/view?usp=sharing'">View
+              food menu</button>
           </div>
         </div>
       </div>
@@ -149,16 +124,9 @@
         </div>
         <div class="col-lg-6">
           <picture>
-            <source
-              media="(max-width:400px)"
-              srcset="images/cocktails-cropped.png"
-            />
+            <source media="(max-width:400px)" srcset="images/cocktails-cropped.png" />
             <source srcset="images/cocktails.png" />
-            <img
-              class="block-image"
-              src="images/cocktails.png"
-              alt="Cocktails in different shaped glasses"
-            />
+            <img class="block-image" src="images/cocktails.png" alt="Cocktails in different shaped glasses" />
           </picture>
         </div>
       </div>
@@ -177,22 +145,12 @@
             <p class="footer__hours">Wed to Sun: 12pm to late</p>
             <div class="footer__phone">
               <span itemprop="telephone">
-                <a class="footer__phone-link" href="tel:03-93265033"
-                  >03 9326 5033</a
-                >
+                <a class="footer__phone-link" href="tel:03-93265033">03 9326 5033</a>
               </span>
             </div>
             <div class="footer__socials">
-              <a
-                href="#"
-                target="_blank"
-                class="footer__socials-button fa fa-facebook fa-2x"
-              ></a>
-              <a
-                href="#"
-                target="_blank"
-                class="footer__socials-button fa fa-instagram fa-2x"
-              ></a>
+              <a href="#" target="_blank" class="footer__socials-button fa fa-facebook fa-2x"></a>
+              <a href="#" target="_blank" class="footer__socials-button fa fa-instagram fa-2x"></a>
             </div>
           </div>
         </div>
@@ -200,26 +158,21 @@
     </div>
   </footer>
 
-   <!-- Jquery -->
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <!-- Jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
-   <script src="script.js"> </script>
+  <script src="script.js"> </script>
 
-    <!-- Bootstrap Jquery, Popper.js & JavaScript scripts -->
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  <!-- Bootstrap Jquery, Popper.js & JavaScript scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+</body>
+
 </html>

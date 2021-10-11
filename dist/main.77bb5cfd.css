@@ -1,8 +1,11 @@
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
-body, html {
+body,
+html {
   margin: 0px;
   padding: 0px;
   height: 100%;
@@ -95,7 +98,6 @@ body, html {
   left: 0;
   top: 0;
   background-color: black;
-  /* Black fallback color */
   overflow-x: hidden;
   /* Disable horizontal scroll */
   transition: 0.5s;
@@ -182,7 +184,6 @@ body, html {
   /* 30px top margin to avoid conflict with the close button on smaller screens */
 }
 
-/* The navigation links inside the overlay */
 /* When you mouse over the navigation links, change their color */
 /* Position the close button (top right corner) */
 .overlay .closebtn {
@@ -195,7 +196,7 @@ body, html {
 .burgerburger {
   font-size: 30px;
   cursor: pointer;
-  color: black;
+  color: #000000;
   z-index: 999999999;
   position: relative;
 }
@@ -342,8 +343,12 @@ a:visited {
 }
 
 #menuNavbar {
-  position: relative;
-  opacity: 1;
+  position: fixed;
+  background: white;
+}
+
+#menuFirstSection {
+  margin-top: 100px;
 }
 
 .menu {
