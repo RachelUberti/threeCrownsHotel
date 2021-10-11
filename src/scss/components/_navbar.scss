@@ -26,9 +26,11 @@
     @include font-bold;
       width: 260px;
       height: 65px;
-      background: #FFFFFF;
+      background: transparent;
       text-transform: uppercase;
       border: none;
+      margin-left: 40px;
+
 
       @media only screen and (max-width: 768px) {
         display: none;
@@ -39,6 +41,7 @@
     @include font-bold;
     width: 260px;
     height: 65px;
+    background: transparent;
     border: 3px solid $black;
     text-transform: uppercase;
     margin-right: 40px;
@@ -46,6 +49,17 @@
     @media only screen and (max-width: 768px) {
     display: none;
     }
+  }
+
+  &__button-book:hover {
+    background: $black;
+    color: $white;
+  }
+
+            
+  &__button-menu:hover {
+    background: $black;
+    color: $white;
   }
 }
 
@@ -105,8 +119,19 @@
     padding: 12px;
     margin: 20px;
 }
+&__button-menu:hover {
+  background: $white;
+  color: $black;
 }
-
+&__button-book:hover {
+  background: $white;
+  color: $black;
+}
+&__socials-button:hover {
+  background: $white;
+  color: $black;
+}
+}
 
   /* Position the content inside the overlay */
   .overlay-content {
@@ -169,7 +194,7 @@
       color: #f4f2ef;
   }
 
-  a:hover,
-  a:active {
-      text-decoration: none;
-  }
+  // a:hover,
+  // a:active {
+  //     text-decoration: none;
+  // }

@@ -38,4 +38,9 @@
         position: relative;
         text-transform: uppercase;
     }
+
+    &__button:hover {
+        background: $black;
+        color: $white;
+      }
 }

@@ -42,9 +42,10 @@ body, html {
   letter-spacing: 0.2em;
   width: 260px;
   height: 65px;
-  background: #FFFFFF;
+  background: transparent;
   text-transform: uppercase;
   border: none;
+  margin-left: 40px;
 }
 @media only screen and (max-width: 768px) {
   .navbar__button-menu {
@@ -63,6 +64,7 @@ body, html {
   letter-spacing: 0.2em;
   width: 260px;
   height: 65px;
+  background: transparent;
   border: 3px solid #000000;
   text-transform: uppercase;
   margin-right: 40px;
@@ -71,6 +73,14 @@ body, html {
   .navbar__button-book {
     display: none;
   }
+}
+.navbar__button-book:hover {
+  background: #000000;
+  color: #ffffff;
+}
+.navbar__button-menu:hover {
+  background: #000000;
+  color: #ffffff;
 }
 
 /* The Overlay (background) */
@@ -146,6 +156,18 @@ body, html {
   padding: 12px;
   margin: 20px;
 }
+.overlay__button-menu:hover {
+  background: #ffffff;
+  color: #000000;
+}
+.overlay__button-book:hover {
+  background: #ffffff;
+  color: #000000;
+}
+.overlay__socials-button:hover {
+  background: #ffffff;
+  color: #000000;
+}
 
 /* Position the content inside the overlay */
 .overlay-content {
@@ -187,11 +209,6 @@ a:link,
 a:visited {
   text-decoration: none;
   color: #f4f2ef;
-}
-
-a:hover,
-a:active {
-  text-decoration: none;
 }
 
 .hero-image {
@@ -383,6 +400,10 @@ a:active {
   position: relative;
   text-transform: uppercase;
 }
+.menu__button:hover {
+  background: #000000;
+  color: #ffffff;
+}
 
 .footer {
   background-color: #000000;
@@ -466,6 +487,8 @@ a:active {
 .footer a:hover,
 .footer a:active {
   text-decoration: none;
+  background: #ffffff;
+  color: #000000;
 }
 .footer__socials {
   display: flex;

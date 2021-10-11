@@ -61,6 +61,8 @@
     a:hover,
     a:active {
         text-decoration: none;
+        background: $white;
+  color: $black;
     }
 
     &__socials {
